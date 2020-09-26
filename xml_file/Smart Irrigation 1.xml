@@ -1,0 +1,1877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ADOXML SYSTEM "adoxml31.dtd">
+<ADOXML version="3.1" date="26.09.2020" time="10:45" database="adodb2" username="user1" adoversion="Version 5.1">
+<MODELS>
+<MODEL id="mod.65003" name="Case 1" version="" modeltype="Business process diagram (BPMN 2.0)" libtype="bp" applib="BPMN-UC Integrated View Dynamic Library v0.1">
+<MODELATTRIBUTES>
+<ATTRIBUTE name="Version number" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Author" type="STRING">user1</ATTRIBUTE>
+<ATTRIBUTE name="Creation date" type="STRING">05.09.2020, 15:29</ATTRIBUTE>
+<ATTRIBUTE name="Date last changed" type="STRING">15.09.2020, 10:49:40</ATTRIBUTE>
+<ATTRIBUTE name="Last user" type="STRING">user1</ATTRIBUTE>
+<ATTRIBUTE name="Keywords" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Model type" type="ENUMERATION">Current model</ATTRIBUTE>
+<ATTRIBUTE name="State" type="ENUMERATION">In process</ATTRIBUTE>
+<ATTRIBUTE name="Reviewed on" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Reviewed by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number of objects and relations" type="INTEGER">41</ATTRIBUTE>
+<ATTRIBUTE name="World area" type="STRING">w:38.5cm h:21.9cm minw:5cm minh:5cm</ATTRIBUTE>
+<ATTRIBUTE name="Grid" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Zoom" type="INTEGER">78</ATTRIBUTE>
+<ATTRIBUTE name="Viewable area" type="STRING">VIEW representation:graphic
+GRAPHIC x:68 y:16 w:950 h:604 scale:0.783526166468
+TABLE
+</ATTRIBUTE>
+<ATTRIBUTE name="Current mode" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Base name" type="STRING">Case 1</ATTRIBUTE>
+<ATTRIBUTE name="Access state" type="ENUMERATION">write</ATTRIBUTE>
+<ATTRIBUTE name="Current page layout" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector marks" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="STRING">Business process diagram (BPMN 2.0)</ATTRIBUTE>
+<ATTRIBUTE name="Change counter" type="INTEGER">2546</ATTRIBUTE>
+<ATTRIBUTE name="Font size" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Context of version" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Contact person" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Copyright info" type="STRING">Edit the model attributes to display your copyright info</ATTRIBUTE>
+<ATTRIBUTE name="Copyright info position" type="ENUMERATION">Bottom right</ATTRIBUTE>
+<ATTRIBUTE name="Name" type="STRING">Case 1</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65003&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Process type" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Executable" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Closed" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Change history"></RECORD>
+<ATTRIBUTE name="Position" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-01] Internal error!  \&quot;fontcolor\&quot; (BPModel)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Keine Modellbezeichnung vergeben</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Pool Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ParticipantType" type="ENUMERATION">Role</ATTRIBUTE>
+<ATTRIBUTE name="Role" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Entity" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="BoundaryVisible" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="BPD Model Attributes" type="STRING">NOTEBOOK
+
+CHAPTER &quot;Business Process Diagram Attributes&quot;
+ATTR &quot;Name&quot; write-protected
+ATTR &quot;Contact person&quot;
+ATTR &quot;Author&quot; write-protected
+ATTR &quot;Language (BPMN)&quot;
+ATTR &quot;ExpressionLanguage&quot;
+ATTR &quot;QueryLanguage&quot;
+ATTR &quot;Creation date&quot; write-protected
+ATTR &quot;Date last changed&quot; write-protected
+ATTR &quot;Documentation (Model)&quot;
+ATTR &quot;State&quot;
+
+GROUP &quot;Copyright&quot;
+ATTR &quot;Copyright info&quot; 
+ATTR &quot;Copyright info position&quot; 
+ENDGROUP
+
+CHAPTER &quot;Process Attributes&quot;
+ATTR &quot;Name&quot; write-protected
+ATTR &quot;Process Term&quot;
+ATTR &quot;ProcessType&quot;
+ATTR &quot;Status&quot;
+ATTR &quot;Assignments&quot; lines:5
+ATTR &quot;Properties (BPMN)&quot; lines:5
+ATTR &quot;AdHoc&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot;
+GROUP &quot;AdHoc = True&quot;
+ATTR &quot;AdHocOrdering&quot;
+ATTR &quot;AdHocCompletionCondition&quot;
+ENDGROUP
+ATTR &quot;SuppressJoinFailure&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot;
+ATTR &quot;EnableInstanceCompensation&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot;
+ATTR &quot;Categories (Process)&quot;
+ATTR &quot;Documentation (Process)&quot;
+
+CHAPTER &quot;Pool Attributes&quot;
+GROUP &quot;Common Graphical Object Attributes&quot;
+ATTR &quot;Name&quot; write-protected
+ATTR &quot;Categories (Pool)&quot;
+ATTR &quot;Documentation (Pool)&quot;
+ENDGROUP
+GROUP &quot;Common Swimlane Attributes&quot;
+ATTR &quot;Pool Term&quot;
+ENDGROUP
+GROUP &quot;Pool Attributes&quot;
+ATTR &quot;ParticipantType&quot;
+ATTR &quot;Role&quot;
+ATTR &quot;Entity&quot;
+ATTR &quot;BoundaryVisible&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot; write-protected
+ENDGROUP</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="ENUMERATION">System</ATTRIBUTE>
+<ATTRIBUTE name="ExpressionLanguage" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="QueryLanguage" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Process Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="BPD Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ProcessType" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Status" type="ENUMERATION">None</ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="AdHoc" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="AdHocOrdering" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="AdHocCompletionCondition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="EnableInstanceCompensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Categories (Process)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation (Process)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation (Pool)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Categories (Pool)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="SuppressJoinFailure" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="RACI/DEMI visualisation" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="ENUMERATION">horizontal</ATTRIBUTE>
+<ATTRIBUTE name="IT systems" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Responsible role" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Input/Output" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Products" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Use cases" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Products color" type="STRING">whitesmoke</ATTRIBUTE>
+<ATTRIBUTE name="RACI/DEMI color" type="STRING">whitesmoke</ATTRIBUTE>
+<ATTRIBUTE name="Responsible role color" type="STRING">whitesmoke</ATTRIBUTE>
+<ATTRIBUTE name="Input/Output color" type="STRING">whitesmoke</ATTRIBUTE>
+<ATTRIBUTE name="Use cases color" type="STRING">whitesmoke</ATTRIBUTE>
+<ATTRIBUTE name="IT systems color" type="STRING">whitesmoke</ATTRIBUTE>
+<ATTRIBUTE name="Reference overview active" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="_ToggleModelInfo_" type="PROGRAMCALL">ITEM &quot;_ToggleModelInfo_&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Display modelling information" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Documentation (Model)" type="STRING"></ATTRIBUTE>
+<RECORD name="Properties (BPMN)"></RECORD>
+<ATTRIBUTE name="CreationDate" type="EXPRESSION">EXPR val:&quot;05.09.2020, 15:29&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModificationDate" type="EXPRESSION">EXPR val:&quot;15.09.2020, 10:49:40&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Language (BPMN)" type="STRING">English</ATTRIBUTE>
+<ATTRIBUTE name="BPMN20 Model Attributes" type="LONGSTRING">NOTEBOOK
+# TODO AVAL sMfbRegistration:&quot;_MFB-Registration_&quot;
+CHAPTER &quot;Description&quot;
+ATTR &quot;Contact person&quot;
+ATTR &quot;Keywords&quot; lines:2
+ATTR &quot;Description&quot; lines:3
+ATTR &quot;Comment&quot; lines:3
+
+GROUP &quot;Copyright&quot;
+ATTR &quot;Copyright info&quot; 
+ATTR &quot;Copyright info position&quot; 
+ENDGROUP
+ATTR &quot;Name&quot; write-protected
+ATTR &quot;Id&quot; write-protected
+
+
+
+#---------------------------------------------
+CHAPTER &quot;Process properties&quot;
+#---------------------------------------------
+GROUP &quot;Process attributes&quot;
+ATTR &quot;Process type&quot; #None, Private, Public 
+ATTR &quot;Executable&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot;
+ATTR &quot;Closed&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot;
+ENDGROUP
+
+GROUP &quot;Process relevance&quot;
+ATTR &quot;Auditing&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot;
+ATTR &quot;Monitoring&quot; ctrltype:check checked-value:&quot;Yes&quot; unchecked-value:&quot;No&quot;
+ENDGROUP
+
+CHAPTER &quot;User attributes&quot;
+ATTR &quot;Model type&quot;
+ATTR &quot;State&quot;
+ATTR &quot;Reviewed on&quot;
+ATTR &quot;Reviewed by&quot;
+
+CHAPTER &quot;System attributes&quot;
+ATTR &quot;Author&quot; write-protected
+ATTR &quot;Creation date&quot; write-protected
+ATTR &quot;Last user&quot; write-protected
+# ATTR &quot;Date last changed from&quot; write-protected
+ATTR &quot;Date last changed&quot; write-protected
+ATTR &quot;Number of objects and relations&quot; write-protected
+ATTR &quot;Context of version&quot; write-protected
+
+CHAPTER &quot;Change history&quot;
+ATTR &quot;Change history&quot; lines:30
+
+</ATTRIBUTE>
+<ATTRIBUTE name="_GoToAceHp_" type="PROGRAMCALL">ITEM &quot;_GoToAceHp_&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="__GfxThumb__" type="LONGSTRING">iVBORw0KGgoAAAANSUhEUgAAAQAAAACSCAIAAAAlyYPNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAT2klEQVR4nO2dbXAUx5nH/4NkhOKUwcK8SOHFQM/6WFPg4mKwg7kDbBKGAbIVs9JdlS9cXSVWlevEyjh7clWc8kvsOm9tgr3Ilcrqru6KuriuVqu7WsDLmBCbOD4SlMTGH2y5brqBgJ1IZ14MdsraNdrp+9DSetEL7Pvs7vTvw2p2NNPb3fP8n366p6dHGRoa6u/vh7NJJBKtra1250JiA/X9/f133XXXTfX10b6+y5cvK4pSX1//5S9/WduiTW+YDmBRc/MNU/lgcBDAwuZmxhgIIZn/YwyEnBscAsAYXdTcPP6ASWGMARRQrz1Y/BBlbFNzMwNACJj4Sxhj6cNGT2KMiW3G0geLIwkhr7/5JlEJgHdOvnPD7EhqlXoAw4nEm7/73QMPPJD5j9+c+M2atWvvWJJijIEBW4Bug2oqDGqqqusgNZcDUPWOLQRYOCoSBrD4I3sHli93v6/qP9lChBESQprn//bkyU3rm41XDdMA8P7A+8s9ezo0woxHDHO5qncQdBtU1dQthIAZzDChuiihGqMG0zq2GN2vah1bFjY3//bkyU3r17NXuyk0lTAwFqfQOwgYoyAAAwgICMCYQaGBMBiMakQDYwyMMDAwgk3r1//25MlZs2aVv9IllYNy4MCBxYsXnz179vLly9OnTxd7U6lUU1NTS0vLKre7WL/0PmPLs3D9ZUtHJPX555+fPXtWhkCOpR5AIpFYtGgR57yurk5RFEVR6urqli1bdvHCxf633l77l6tvmEr/228DWLt6yiPFAR8MDS2cP7+Q7Pa/9VZR0hGJXPnkkwITkVQ7yoEDB+zOg/3IFsCx1O/YsaO3t9fubEgk9qBwzu3Og0RiG/V2Z0AisRMpAImjkQKQOBopAImjkQKQOJriCKCnp6co6UgkmcyaNavU92eK1gJs27YtmUz+6U9/amlpaWhoaGlpyfLEnp6ehx9+uFjZkNQM5fGqRRPAvHnz3n333YULF3788ccrVqwoVrISSUkpmgDq6upWrFixdu3aEydO1NXVFStZiaSkFLMTXFdX9/LLL9fXy461pGoomrEmk8nf//73p0+f/vDDD7/2ta81NjYWK2WJpHQUTQANDQ3r1q1bt25dsRKcimg0Om4P51zO5ZTkR1WGK16vN70djUYVRYlGo1IGkjyoSgFMiqIovb29TtPAve3RabAAWJh24nTOp/Oj3hsfVNNUvQDSrcHE0KjmUTZHP/6vre+88w4Hlq+466aGm1McKQspCyNjGykL6Z0pjpFr9yibow7XQNULIJO2tra2tjbxhIOiKAAmbtcY02fcPHvO3KtXR7Kx/okbkqoUAOd8cHDwypUrAJqamubNmyf2RyKRdAiUae41afqCFMdN02dcHfksw/rZ6Z8jtYksmGD0IxP2SKpSAP39/atWrZozZw6Ay5cvnzp1atmyZVmeqyg19RBcysLsOc03J5MZvp+klhjWabr/JdMisKhr3T+rI2dI88JJGgFJVQpgxowZjY2Nx44dA7Bx48bBwUG7c1RWFEVJt3WffvrJf/f+Z8qytB07G2fOEWa9YLGW4vjbgPaF75/M+qUAUKUCWLp0KaVURPaMsewn3sGmcEhktYiI3k4kEmn40i2t326/ftw/MfLJ7APkmrfMOLMGqEoBHDlyBIBYxuv8+fN2ZycrIpHIpPuHhobmT7rG0dAQslj7aEKvl505DYsjZdFf/dS0+ID1XbfV41rzjGr9Eqn1ZF6G9Y9YAMA5z35ZkLa2tiyPrBaqTwBer1dcsGQymcfpNvYBWltXMyMeN126TwUDDe6KuZ/w6KsR3BXzPOExTbhcZsx0+X0aATMMaBoBM0JxcwCusK4agHbNmnjK5ugHXx/n+8lXFo9ueJ/TRn3/M0hZSK2/xvePZIRA2Xt0KQD7YYytbm0lY9vZrLRbMRCi+Xya2AQJHxebEBua+BjdR0Y3vjgD2iQp5hf5jGSEQA6nVAJgzADRwMSSzGJN5tG1nAuzWEZpPLarF637/T4AMNrXxTzHw5MZx6TU0hAQUJD1y04wSiYARoPPPvtubMUTHk88FoPHMxCMefxhAkqzWh19aoim+TTNN/Ytw486kkKsXwoAJRMA0dJ2Odqoj7bomt3WWkv3AfhRr7K5oAkgDp8HgWrsAxRC0YcjbSfTgmtJ22WjdH2ACa+KkVQ5wn2IgaCauRVQKgHQeDDW6/Yc1xHa9Wxv6/7jOg3FoesqBdFs0wXnvPYagTTlcf9T3dCoUkolAM0XHu2p+o6LDeITf0r0g9djXKCca9xceKCc082miiXtPmrG/aPUw6Bjo/UFDn0WhLI5evbf77tw4YLFMavptltv4+WfNN/XdyfwZLFKNBVl6ANEo26rtsaOSjYMSmOxXabnuI5Q3HTpPgLDgKqBtscR9uUxFBQIKAC6uvK5wLNuve38xUsAbpl1W/knzff13bljx1MHDz7V21vdvrOv784dO75/8ODTBRakkEtZdEo2DKqFR0c8x25kiq8k7Jv6rMkR9bVnz2vAcH51p9TflEpZiUQSdTfd0PqLO2leWD/nie3bHz10qFDTuT4ldf/C+jlPbt/ekXdBCr+URafSh0EDAeWxx45znti7934AnZ0/AxKBgJJTxaUsLCF/kUh+nof1F3636ODBp7Zvf5TzJIBp00qrgRLR13cnAM6TQPLQoe78EklfSmCY80R+l7LoVLoAAGRa/4svPpTlWZmT5oc/++zNN15PJj+/96/u/+P/nU8tJgsyTPwPp5m1mDRbGLFw7g9s/kJSyKT5zN/t67tz+/bHgeShQy8A0PWHgGQ8XgUaGFcK4fsPHfoRgG3bdnGeVSkyExGkrZ/zBCA+baY43aZCFri9zrmBgLJnz2t7997/6KN9L7ywM71/9+4f7tv3g8cfzyr9SCSyYWvrmO9nr/88/vPDWMoHGPF8+ztai8X+5/X4sdDAoh/7156m5xar1r8Ez/2D/6uczF0wKhLvY1H8Imd7jUQi3/xmEkhynnzllZ8I6xdfDx8+4vUO5JqgLUSjbmH9wvcL6wc+5zx5+HA8y1JEIpEzZ9pE5HOt9Q9znti37weTNgI9PT3VtDp0yRgGwHmis/NfRZWFQn4ggRuNLYrnRcR2RuRD7tvku3dDZpxD1vy1b/V6pDhSC8gcC6mnw6sKmDSf+buHDj2/bdsjQBJAPP4zXd8hrN+ynizFYHrmT+M6TxrkkpRl4eDBp7dv7xAh3Cuv7Nf1bwnrv2EpxuVnUusXl9JGKroFABAIKCLy8fleGrN+ILvOk1gmSNkc/SDqLWTa8ENduQ2DZi5PJKJnXfemfb9lPYkSDqUz9sWTBiqCQdPv1wEa3xVz7feDUlVVKTA6HKdj6ocNJivF36R9f5alyExEXMpx1r9v33NTXUrZAqRJAAiF/lF86eh4rLv7x9mclq67Mk+aH3fNymb94j4AueZJg9F54sQn9hCC0XuRo8NxUz9skJnJnTvf6+u7U1i/aNCyLMWEY66x/kroA1S6ALq6uBgv2737h8JhdHf/ONdxAxsnzQvT2br1G6X3/aVlrCAPHD78C1GQXJl4KSGHQacicy6dqKPAPymYnWd9lXPSfDrn6afVdu5876WXVGvuc/NLbP2lvg0sNJC3jBljD3Zx4owbYQXCKI2DuuIx0+XXVQpo5MGNh6GpRig0Vcw6FeWdNJ9+YO0Jj64RMKN9V8xz3L9s32FKV2/darS3m36/LqLwEFV99k0MzIudO9/LdwFWRmk8FoQbWBmmCFFmz7yw8VR6J1iSPTX2PIDsBEtqgcxoNnMRgwp5YkQKoHaoSPc/9SIGNE6pi5pQfSpCFDZFg1IAkpIy5SIGRPMRjA2/+mxrCaQAaoca6wOUBykAiaORAqgdpPvPAykAiaORAqgdZB8gD6QAJI6maHeCC09EIhlHGe4EF63RrIF1byQVSNUIQGI7iqJQSgEANB40gQH43Qi69LCKrOcOOg0pgNpBdoLzQFZZTVEhM8yqCDkKVFvQYDDo8YdVGDQeM11hXa2ul0iVHdkC1A4yBMoD2QJIHI30GRJHI1sAiaMpjgB6enouXLjQ1NQ0bdq0oiQoyYP29vZwOGx3LopJ1dwJ7unpmTlzJiHE7XaLPQ0NDVmKQT4UXyxqrBNcZQ/Fz50796OPPhKv0Dl37lxLS8uaNWuKlbgkG2rJ+stGMfsAGzZsaGxsBLB8+fITJ04UMWWJpEQUTQC33357OByeOXMmgPPnz999993FSlmSJTUWApWHoglgyZIlnZ2dYntoaOiNN94oVsoSe4lGx6+rxzmv0hVOJ1KSYdCPPvro5ptvLkXKpUD0W4TvrOrt0rl/r/eLxSGj0aiiKPkukFhxlEQAK1euXLlyZSlSLgWZdlPt2+XB6/VGo9Ha0IC8ESbJGREU1UY74FwByC7j9ZmqftLh0MS+QTXiXAE4mWy6Fumvvb29nPPBwcErV64AaGpqmjdvnk0ZLz7OFYCT3X9OXYtoNNrf379q1ao5c+YAuHz58qlTp5YtW1auzJYW5wrAseQR+82YMaOxsfHYsWMANm7cODg4WJqs2YBzBSD7ANmzdOlSSqmIiBhjLS0tdueoaDhXAI4lD9kfOXIEwPTp0wGcP3+++HmyD+cKQLr/LPF6vWLRp2QyaXdeio9zBeBYcor9xDIT1T7Yfx2cKwDZB8gCRmkwFnS73QMY8MAPV9CEX0eQqmEVNbHehHMF4FhykT3RtLCW+RJ58eb5sHjZfHHzZQ/OFYB0/xI4VgBiRA+OlIGM/TJxqAAE0g4kDhUA5zzdCDgNKftMHCEAZfNk8xYf6J18/2Two94bH2QH2RdhKiq2aOWhJAJgDGKALHMDgC2jZpv+fu8f/+Pvbp09J2UhZSHFMz6n/mpd+1XZHK1AQ6nhopWNUgiAUUpBAYACNB6L9QJPeDwAjZvQdcTj0H1aucRw9bNLpvm/DTM+4BzL7nBPq5+Rq4mkrDJlNVdquGhloxQCINqYdRMAmqb5xv4jhpR9vklPy55AQAHQ1ZVVLFvXcMvqr96bspDi/Mjhg/dv/VauJlK4leSU4eyphKLlQYlqIz+qrA8g6m7Pnlc5H862HhV8+ME5C4rFYVk8DxNJFXClxjJ8NIcMZ4+tRcuD0tZGXpRMAIyBENEHSPcECiQQUPbseQMY5nwYSHR2/puox+tX4lsfL2uaMz/FcfXq1SuffJKHieTtJgMB5bHH3uQ8sXfvZgCdnftffHHXDTOcPTYWLQ/StTF2+fYDiSLWRn6USADMiAdj8Lhdqo+AUlq86H/U+jkXG8OTHiSGOCORSGtr658TVt30RnB88umfR66OnOZYkKOJ5OQmFUURvyu+jrN+n+/FUKizkPLbWLQ8sppZFQDS1p/xaTNFWxw37wVuszw3EFBE5JNp/eLrl7703PXPjUQi677RmrJw+mjoFNetw8HTj/jvS5Gv3G786jV1we30zZ+aFh/g33VbPa41z6gjvwS/j8zNsJi270Xxi9xmRD7/PPbsObp37+ZHH+194YUvzt29+8l9+55+/PGcEsuyaC6LmhZ3LfiOap1ByoLFS1K0PDJ55kybiHyutf4E58P79j09aSNQZYvjloFJrZ/z4eefx5IlkeufK673gk2+Zo7UhvA9o5dfu2cDLIvsfFYb9YjPIGUhdd8kPUXOeU7vQj5zpk14OM6HOzvDIreh0OOcJ/JILeuiaaPZXiR8f0mKlh+TWr+oDRupGgF0dfFAQBFxf6b1d3fvvX4QqWyOnu315hEcT+wp5uiNWgMBJR35COvv6Ojq7g6IDBfu2+wrWh6M1sY460/Xhl1UjQAE46x/qj7AOAo0kcJ6iol03N/R0ZVlhrPH1qLlwTjfb38foJoEIBoBALt3f1/4fmQ3jlagieTdU8zI8JPC22WZ4eyxq2h5UIbayINqEgBj7MEuTnK/k1KgieTnJhljhBCRyUBAuXgRDz9Mi/4MlS1Fy5t0baACTF9QTQIAjVOq01hwhp/qWT+PxI96yz5jjBntQdPv1xmjwTj8vq4uzgyDUoAwhGhcN11xXfUVqgY7ipYfTEwGA2g8aM7Aw/C7Q+2GHlZhAJqdT1ZWzTCoxGnIYVBJrSHWmKioZ4mrQgDXNKDAAPxuBF2V0IBKcoPGKXVRE6pPRYiifHOCp6QqBJB2GsQXHluiQLwPV5v8BEllQjQfwdhV89lu/ECVCACoyNZTUgNUiwAYpRSgNG6aLpcrZppul+5TaYiqFdCMSqqXahHA2EM2Pk0DoI0u1kQqoxmVVC/VIgCJpCRIAUgcjRSAxNFIAUgcjRSAxNFIAUgcjRSAxNFIAUgcjRSAxNFIAUgcjRSAxNFIAUgcTdEE0NPTY8u5EkkhFO19aWVYWkziQEr9TLB8YaDE0cg+gMTRSAFIHI0UgMTRSAFIHI0UgMTRSAFIHI0UgMTRSAFISgVjlbtypVi8HlIAkpLBKDWBWJyGfRpjTCxrBt2nwqBUhUoBTYURj5tw6TriQVP36wBAadCE26X6VDBQ8X+fCgZQCk2FEQzG3B6PS9UQbzfhcemaBiNEAZiA7tMIYwalgKqpMCiFCdWFoAmPC6qmEcMIAbpGwAAi7wRLHI1sASTVDWOXQJpuHGexSwyggHrtwbIFkFQ1lwzDNE0AFwYGbvP479HIJaPdNN2zdd9shEzqcqlaExGHYbbLnA0diF/UfKoRoppPlQKQOBoZAkkcjRSApJa4ZIR+HRsAcJvH70Lw1zH3HX4faAgm4AI0H4zQRej3aOSSEbooQyBJraEoP8r+YM6/JwUgcTT/DwCEs5ozizJIAAAAAElFTkSuQmCC</ATTRIBUTE>
+</MODELATTRIBUTES>
+<INSTANCE id="obj.65005" class="Pool" name="Rainfall Sensor Device">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:2cm w:30cm h:7cm index:1</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ParticipantType" type="ENUMERATION">Role</ATTRIBUTE>
+<ATTRIBUTE name="Role" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Entity" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="BoundaryVisible" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Process Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ProcessType" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Status" type="ENUMERATION">None</ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="AdHoc" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="AdHocOrdering" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="AdHocCompletionCondition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="EnableInstanceCompensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Categories (Process)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation (Process)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="SuppressJoinFailure" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65005&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">white</ATTRIBUTE>
+<ATTRIBUTE name="Orientation" type="ENUMERATION">horizontal</ATTRIBUTE>
+<ATTRIBUTE name="Boundary visible" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Process type" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Executable" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Closed" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Digital Entity" type="ENUMERATION">Sensor</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65011" class="Pool" name="Irrigation Action">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:10.5cm w:30cm h:8.5cm index:2</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ParticipantType" type="ENUMERATION">Role</ATTRIBUTE>
+<ATTRIBUTE name="Role" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Entity" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="BoundaryVisible" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Process Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ProcessType" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Status" type="ENUMERATION">None</ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="AdHoc" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="AdHocOrdering" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="AdHocCompletionCondition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="EnableInstanceCompensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Categories (Process)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation (Process)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="SuppressJoinFailure" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65011&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">white</ATTRIBUTE>
+<ATTRIBUTE name="Orientation" type="ENUMERATION">horizontal</ATTRIBUTE>
+<ATTRIBUTE name="Boundary visible" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Process type" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Executable" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Closed" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Digital Entity" type="ENUMERATION">Actuator</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65014" class="Task" name="Read Rainfall">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13cm y:6.5cm w:3.36cm h:1.8cm index:3</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Performer" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Priority" type="INTEGER">10</ATTRIBUTE>
+<ATTRIBUTE name="Done by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Continuous execution" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Max. resource waiting time" type="TIME">00:000:00:05:00</ATTRIBUTE>
+<ATTRIBUTE name="Cooperative" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Cooperation mode" type="ENUMERATION">synchron</ATTRIBUTE>
+<ATTRIBUTE name="Average number of participants" type="INTEGER">1</ATTRIBUTE>
+<ATTRIBUTE name="Min. quota of presence" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Max. start period" type="TIME">00:001:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Execution interruptable" type="ENUMERATION">yes</ATTRIBUTE>
+<ATTRIBUTE name="Task stack" type="ENUMERATION">personal</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Task)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Status" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External documentation" type="PROGRAMCALL">ITEM &quot;&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Info on results" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated personnel costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Classification" type="ENUMERATIONLIST"></ATTRIBUTE>
+<ATTRIBUTE name="EDP transaction costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="EDP batch costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Printing costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Postal costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Aktivität</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Standard</ATTRIBUTE>
+<INTERREF name="referenced subprocess"></INTERREF>
+<ATTRIBUTE name="Display responsible role" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Subprocessname" type="EXPRESSION">EXPR val:&quot;Bezeichnung&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="EXPRESSION">EXPR val:&quot;horizontal&quot;</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Show name" type="ENUMERATION">center</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65014&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Task type" type="ENUMERATION">Sensor Task</ATTRIBUTE>
+<ATTRIBUTE name="Global task" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="For compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Loop type" type="ENUMERATION">Not specified</ATTRIBUTE>
+<INTERREF name="Call activity"></INTERREF>
+<ATTRIBUTE name="Sequential execution" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced data input"></INTERREF>
+<INTERREF name="Referenced data output"></INTERREF>
+<ATTRIBUTE name="Instantiate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Completion condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Loop condition (standard)" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced message"></INTERREF>
+<ATTRIBUTE name="URI" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65019" class="Task" name="Start irrigation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13cm y:15cm w:3.5cm h:2cm index:4</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Performer" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Priority" type="INTEGER">10</ATTRIBUTE>
+<ATTRIBUTE name="Done by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Continuous execution" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Max. resource waiting time" type="TIME">00:000:00:05:00</ATTRIBUTE>
+<ATTRIBUTE name="Cooperative" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Cooperation mode" type="ENUMERATION">synchron</ATTRIBUTE>
+<ATTRIBUTE name="Average number of participants" type="INTEGER">1</ATTRIBUTE>
+<ATTRIBUTE name="Min. quota of presence" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Max. start period" type="TIME">00:001:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Execution interruptable" type="ENUMERATION">yes</ATTRIBUTE>
+<ATTRIBUTE name="Task stack" type="ENUMERATION">personal</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Task)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Status" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External documentation" type="PROGRAMCALL">ITEM &quot;&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Info on results" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated personnel costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Classification" type="ENUMERATIONLIST"></ATTRIBUTE>
+<ATTRIBUTE name="EDP transaction costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="EDP batch costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Printing costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Postal costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Aktivität</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Standard</ATTRIBUTE>
+<INTERREF name="referenced subprocess"></INTERREF>
+<ATTRIBUTE name="Display responsible role" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Subprocessname" type="EXPRESSION">EXPR val:&quot;Bezeichnung&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="EXPRESSION">EXPR val:&quot;horizontal&quot;</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Show name" type="ENUMERATION">center</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65019&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Task type" type="ENUMERATION">Actuator Task</ATTRIBUTE>
+<ATTRIBUTE name="Global task" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="For compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Loop type" type="ENUMERATION">Not specified</ATTRIBUTE>
+<INTERREF name="Call activity"></INTERREF>
+<ATTRIBUTE name="Sequential execution" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced data input"></INTERREF>
+<INTERREF name="Referenced data output"></INTERREF>
+<ATTRIBUTE name="Instantiate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Completion condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Loop condition (standard)" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced message"></INTERREF>
+<ATTRIBUTE name="URI" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65028" class="End Event" name="Irrigation Stop">
+<ATTRIBUTE name="Position" type="STRING">NODE x:31.5cm y:15cm index:5</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">local</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (End Event)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">without name</ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Ende</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65028&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Message" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Signal" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Escalation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Error" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Terminate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Cancel" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Details" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65033" class="Start Event" name="Every 1 day">
+<ATTRIBUTE name="Position" type="STRING">NODE x:8.5cm y:6.5cm index:6</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Process calendar" type="LONGSTRING">D@Working day@b@32400-43200@U900;1800@45000-59400@U900;1800@Free day@c@@@$cbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbcbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbcbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbcccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbccbbccb</ATTRIBUTE>
+<ATTRIBUTE name="Quantity" type="EXPRESSION">EXPR expr:(0) val:0</ATTRIBUTE>
+<ATTRIBUTE name="Time period" type="ENUMERATION">Per year</ATTRIBUTE>
+<ATTRIBUTE name="Abandon after tolerance waiting time" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Tolerance waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Start Event)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Trigger" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Result" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Aggregated execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated cycle time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Info on results" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Cost driver" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Cost driver quantity" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated personnel costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="External documentation" type="PROGRAMCALL">ITEM &quot;&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Prozeßstart</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="EXPRESSION">EXPR val:&quot;horizontal&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Implementing control" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65033&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Top-level</ATTRIBUTE>
+<ATTRIBUTE name="Message" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Timer" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Conditional" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Signal" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Escalation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Error" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Parallel" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Details" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Timer type" type="ENUMERATION">Date</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65051" class="Start Event" name="Start Irrigation Process">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9cm y:15cm index:8</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Process calendar" type="LONGSTRING">D@Working day@b@32400-43200@U900;1800@45000-59400@U900;1800@Free day@c@@@$cbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbcbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbcbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbcccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbccbbccb</ATTRIBUTE>
+<ATTRIBUTE name="Quantity" type="EXPRESSION">EXPR expr:(0) val:0</ATTRIBUTE>
+<ATTRIBUTE name="Time period" type="ENUMERATION">Per year</ATTRIBUTE>
+<ATTRIBUTE name="Abandon after tolerance waiting time" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Tolerance waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Start Event)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Trigger" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Result" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Aggregated execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated cycle time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Info on results" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Cost driver" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Cost driver quantity" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated personnel costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="External documentation" type="PROGRAMCALL">ITEM &quot;&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Prozeßstart</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="EXPRESSION">EXPR val:&quot;horizontal&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Implementing control" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65051&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Top-level</ATTRIBUTE>
+<ATTRIBUTE name="Message" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Timer" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Conditional" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Signal" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Escalation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Error" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Parallel" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Details" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Timer type" type="ENUMERATION">Date</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65403" class="Data Object" name="Rainfall ">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:3.5cm index:10</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Data type" type="ENUMERATION">IoT Data</ATTRIBUTE>
+<INTERREF name="Referenced input data (optional)"></INTERREF>
+<INTERREF name="Referenced input data (while executing)"></INTERREF>
+<ATTRIBUTE name="Collection (input)" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Referenced output data (optional)"></INTERREF>
+<INTERREF name="Referenced output data (while executing)"></INTERREF>
+<ATTRIBUTE name="Collection (output)" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Capacity" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Unlimited" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Referenced data store (global)"></INTERREF>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65403&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65413" class="End Event" name="Read Rainfall Stop">
+<ATTRIBUTE name="Position" type="STRING">NODE x:31.5cm y:6.5cm index:12</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">local</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (End Event)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">without name</ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Ende</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65413&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Message" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Signal" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Escalation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Error" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Terminate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Cancel" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Details" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65423" class="Task" name="Stop Irrigation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:24cm y:15cm w:3.5cm h:2cm index:14</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Performer" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Priority" type="INTEGER">10</ATTRIBUTE>
+<ATTRIBUTE name="Done by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Continuous execution" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Max. resource waiting time" type="TIME">00:000:00:05:00</ATTRIBUTE>
+<ATTRIBUTE name="Cooperative" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Cooperation mode" type="ENUMERATION">synchron</ATTRIBUTE>
+<ATTRIBUTE name="Average number of participants" type="INTEGER">1</ATTRIBUTE>
+<ATTRIBUTE name="Min. quota of presence" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Max. start period" type="TIME">00:001:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Execution interruptable" type="ENUMERATION">yes</ATTRIBUTE>
+<ATTRIBUTE name="Task stack" type="ENUMERATION">personal</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Task)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Status" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External documentation" type="PROGRAMCALL">ITEM &quot;&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Info on results" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated personnel costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Classification" type="ENUMERATIONLIST"></ATTRIBUTE>
+<ATTRIBUTE name="EDP transaction costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="EDP batch costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Printing costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Postal costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Aktivität</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Standard</ATTRIBUTE>
+<INTERREF name="referenced subprocess"></INTERREF>
+<ATTRIBUTE name="Display responsible role" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Subprocessname" type="EXPRESSION">EXPR val:&quot;Bezeichnung&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="EXPRESSION">EXPR val:&quot;horizontal&quot;</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Show name" type="ENUMERATION">center</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65423&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Task type" type="ENUMERATION">Actuator Task</ATTRIBUTE>
+<ATTRIBUTE name="Global task" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="For compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Loop type" type="ENUMERATION">Not specified</ATTRIBUTE>
+<INTERREF name="Call activity"></INTERREF>
+<ATTRIBUTE name="Sequential execution" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced data input"></INTERREF>
+<INTERREF name="Referenced data output"></INTERREF>
+<ATTRIBUTE name="Instantiate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Completion condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Loop condition (standard)" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced message"></INTERREF>
+<ATTRIBUTE name="URI" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.65600" class="Data Object" name="Flowmeter">
+<ATTRIBUTE name="Position" type="STRING">NODE x:28cm y:12cm index:15</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Data type" type="ENUMERATION">IoT Data</ATTRIBUTE>
+<INTERREF name="Referenced input data (optional)"></INTERREF>
+<INTERREF name="Referenced input data (while executing)"></INTERREF>
+<ATTRIBUTE name="Collection (input)" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Referenced output data (optional)"></INTERREF>
+<INTERREF name="Referenced output data (while executing)"></INTERREF>
+<ATTRIBUTE name="Collection (output)" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Capacity" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Unlimited" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Referenced data store (global)"></INTERREF>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65600&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.66007" class="Exclusive Gateway" name="Rainfall Status">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18cm y:6.5cm index:18</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Variable type" type="ENUMERATION">enumeration</ATTRIBUTE>
+<ATTRIBUTE name="Variable scope" type="ENUMERATION">global</ATTRIBUTE>
+<ATTRIBUTE name="Variable name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Variable value" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Exclusive Gateway)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Entscheidung</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Sum" type="EXPRESSION">EXPR
+ val:0</ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Data-based (with marker)</ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">below</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;66007&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Constraints" type="ENUMERATION">Unspecified</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.66013" class="Task" name="Trigger Irrigation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:24cm y:4cm w:3.36cm h:1.8cm index:20</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Performer" type="EXPRESSION">EXPR expr:(&quot;&quot;) val:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Priority" type="INTEGER">10</ATTRIBUTE>
+<ATTRIBUTE name="Done by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Continuous execution" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Max. resource waiting time" type="TIME">00:000:00:05:00</ATTRIBUTE>
+<ATTRIBUTE name="Cooperative" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Cooperation mode" type="ENUMERATION">synchron</ATTRIBUTE>
+<ATTRIBUTE name="Average number of participants" type="INTEGER">1</ATTRIBUTE>
+<ATTRIBUTE name="Min. quota of presence" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Max. start period" type="TIME">00:001:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Execution interruptable" type="ENUMERATION">yes</ATTRIBUTE>
+<ATTRIBUTE name="Task stack" type="ENUMERATION">personal</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Task)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Status" type="ENUMERATION">None</ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External documentation" type="PROGRAMCALL">ITEM &quot;&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Info on results" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated personnel costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Classification" type="ENUMERATIONLIST"></ATTRIBUTE>
+<ATTRIBUTE name="EDP transaction costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="EDP batch costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Printing costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Postal costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Aktivität</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Standard</ATTRIBUTE>
+<INTERREF name="referenced subprocess"></INTERREF>
+<ATTRIBUTE name="Display responsible role" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Subprocessname" type="EXPRESSION">EXPR val:&quot;Bezeichnung&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="EXPRESSION">EXPR val:&quot;horizontal&quot;</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Show name" type="ENUMERATION">center</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;66013&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Task type" type="ENUMERATION">Sensor Task</ATTRIBUTE>
+<ATTRIBUTE name="Global task" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="For compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Loop type" type="ENUMERATION">Not specified</ATTRIBUTE>
+<INTERREF name="Call activity"></INTERREF>
+<ATTRIBUTE name="Sequential execution" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced data input"></INTERREF>
+<INTERREF name="Referenced data output"></INTERREF>
+<ATTRIBUTE name="Instantiate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Completion condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Loop condition (standard)" type="STRING"></ATTRIBUTE>
+<INTERREF name="Referenced message"></INTERREF>
+<ATTRIBUTE name="URI" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.68400" class="Start Event" name="after 30 min">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18cm y:15cm index:24</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Process calendar" type="LONGSTRING">D@Working day@b@32400-43200@U900;1800@45000-59400@U900;1800@Free day@c@@@$cbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbcbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbcbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbcccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbbbbbccbccbbccb</ATTRIBUTE>
+<ATTRIBUTE name="Quantity" type="EXPRESSION">EXPR expr:(0) val:0</ATTRIBUTE>
+<ATTRIBUTE name="Time period" type="ENUMERATION">Per year</ATTRIBUTE>
+<ATTRIBUTE name="Abandon after tolerance waiting time" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Tolerance waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Start Event)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Trigger" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Result" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Aggregated execution time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated waiting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated resting time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated transport time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated cycle time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="Info on results" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Cost driver" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Cost driver quantity" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Aggregated personnel costs" type="DOUBLE">0</ATTRIBUTE>
+<ATTRIBUTE name="External documentation" type="PROGRAMCALL">ITEM &quot;&quot; param:&quot;&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Prozeßstart</ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Modelling direction" type="EXPRESSION">EXPR val:&quot;horizontal&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Implementing control" type="ENUMERATION">no</ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68400&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Top-level</ATTRIBUTE>
+<ATTRIBUTE name="Message" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Timer" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Conditional" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Signal" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Escalation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Error" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Compensation" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Parallel" type="ENUMERATION">No</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Collection" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Object type" type="ENUMERATION">Information</ATTRIBUTE>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Details" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Timer type" type="ENUMERATION">Date</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.68433" class="Exclusive Gateway" name="">
+<ATTRIBUTE name="Position" type="STRING">NODE x:28cm y:6.5cm index:26</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Variable type" type="ENUMERATION">enumeration</ATTRIBUTE>
+<ATTRIBUTE name="Variable scope" type="ENUMERATION">global</ATTRIBUTE>
+<ATTRIBUTE name="Variable name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Variable value" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="fontcolor" type="EXPRESSION">EXPR expr:(set(targets, ctobjs(&quot;Is inside&quot;)),
+cond
+  (tokcnt(targets,&quot; &quot;)=0,&quot;black&quot;,
+    (cond
+      (tokcnt(targets,&quot; &quot;)=1,aval (VAL ctobjs(&quot;Is inside&quot;), &quot;Fontcolor&quot;),
+    (
+    set(tk,token(targets,0,&quot; &quot;)),
+                set(t,VAL (copy(aval(VAL tk, &quot;Position&quot;),search(aval(VAL tk, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+    fortok(x,targets,&quot; &quot;,
+        (
+        set(c,VAL (copy(aval(VAL x, &quot;Position&quot;),search(aval(VAL x, &quot;Position&quot;),&quot;index&quot;,0)+6,-1))),
+        cond(c&gt;=t,(set(res,x),set(t,c)),&quot;&quot;)
+        )),
+                aval (VAL res, &quot;Fontcolor&quot;)
+    ))
+   )
+  )) val:error:&quot;[acoexpar-02] Attribute \&quot;Fontcolor\&quot; (Pool) does not exist!  \&quot;fontcolor\&quot; (Exclusive Gateway)&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<RECORD name="Assignments"></RECORD>
+<ATTRIBUTE name="Term" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Order" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Entscheidung</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Open questions" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Sum" type="EXPRESSION">EXPR
+ val:0</ATTRIBUTE>
+<ATTRIBUTE name="Type" type="ENUMERATION">Data-based (with marker)</ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">below</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68433&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Constraints" type="ENUMERATION">Unspecified</ATTRIBUTE>
+<RECORD name="Properties"></RECORD>
+<ATTRIBUTE name="Cardinality" type="STRING"></ATTRIBUTE>
+</INSTANCE>
+<CONNECTOR id="con.65018" class="Is inside">
+<FROM instance="Read Rainfall" class="Task"></FROM>
+<TO instance="Rainfall Sensor Device" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65036" class="Is inside">
+<FROM instance="Every 1 day" class="Start Event"></FROM>
+<TO instance="Rainfall Sensor Device" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65041" class="Subsequent">
+<FROM instance="Every 1 day" class="Start Event"></FROM>
+<TO instance="Read Rainfall" class="Task"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:7</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">2</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65041&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Start Event&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65046" class="Is inside">
+<FROM instance="Start irrigation" class="Task"></FROM>
+<TO instance="Irrigation Action" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65048" class="Is inside">
+<FROM instance="Irrigation Stop" class="End Event"></FROM>
+<TO instance="Irrigation Action" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65054" class="Is inside">
+<FROM instance="Start Irrigation Process" class="Start Event"></FROM>
+<TO instance="Irrigation Action" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65055" class="Subsequent">
+<FROM instance="Start Irrigation Process" class="Start Event"></FROM>
+<TO instance="Start irrigation" class="Task"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:9</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">4</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65055&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Start Event&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65406" class="Is inside">
+<FROM instance="Rainfall " class="Data Object"></FROM>
+<TO instance="Rainfall Sensor Device" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65407" class="Data Association">
+<FROM instance="Rainfall " class="Data Object"></FROM>
+<TO instance="Read Rainfall" class="Task"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:12cm y1:3.5cm index:11</ATTRIBUTE>
+<ATTRIBUTE name="Name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">#-----------------------
+CHAPTER &quot;Description&quot;
+#-----------------------
+ATTR &quot;Name&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+ATTR &quot;Id&quot; </ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Data Object&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65407&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65416" class="Is inside">
+<FROM instance="Read Rainfall Stop" class="End Event"></FROM>
+<TO instance="Rainfall Sensor Device" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65422" class="Subsequent">
+<FROM instance="Start irrigation" class="Task"></FROM>
+<TO instance="after 30 min" class="Start Event"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:13</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">6</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65422&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Start Event&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65426" class="Is inside">
+<FROM instance="Stop Irrigation" class="Task"></FROM>
+<TO instance="Irrigation Action" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65603" class="Is inside">
+<FROM instance="Flowmeter" class="Data Object"></FROM>
+<TO instance="Irrigation Action" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65604" class="Data Association">
+<FROM instance="Stop Irrigation" class="Task"></FROM>
+<TO instance="Flowmeter" class="Data Object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25cm y1:12cm index:16</ATTRIBUTE>
+<ATTRIBUTE name="Name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">#-----------------------
+CHAPTER &quot;Description&quot;
+#-----------------------
+ATTR &quot;Name&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+ATTR &quot;Id&quot; </ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Data Object&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65604&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.65605" class="Subsequent">
+<FROM instance="Stop Irrigation" class="Task"></FROM>
+<TO instance="Irrigation Stop" class="End Event"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:17</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">8</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;65605&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;End Event&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.66010" class="Is inside">
+<FROM instance="Rainfall Status" class="Exclusive Gateway"></FROM>
+<TO instance="Rainfall Sensor Device" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.66011" class="Subsequent">
+<FROM instance="Read Rainfall" class="Task"></FROM>
+<TO instance="Rainfall Status" class="Exclusive Gateway"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:19</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">9</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;66011&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Exclusive Gateway&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.66016" class="Is inside">
+<FROM instance="Trigger Irrigation" class="Task"></FROM>
+<TO instance="Rainfall Sensor Device" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68000" class="Subsequent">
+<FROM instance="Rainfall Status" class="Exclusive Gateway"></FROM>
+<TO instance="Trigger Irrigation" class="Task"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:18cm y1:4cm index:21 MIDDLE x:19.97cm y:4cm</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">10</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING">no rainfall over 1  day</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68000&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Exclusive Gateway&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68001" class="Subsequent">
+<FROM instance="Rainfall Status" class="Exclusive Gateway"></FROM>
+<TO instance="" class="Exclusive Gateway"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25cm y1:6.5cm index:22 MIDDLE x:24.83cm y:6.5cm</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">11</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING">rainfall within a day</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68001&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Exclusive Gateway&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Exclusive Gateway&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68002" class="Subsequent">
+<FROM instance="Trigger Irrigation" class="Task"></FROM>
+<TO instance="" class="Exclusive Gateway"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:28cm y1:4cm index:23 MIDDLE x:28cm y:4.26cm</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">12</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68002&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Exclusive Gateway&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68403" class="Subsequent">
+<FROM instance="after 30 min" class="Start Event"></FROM>
+<TO instance="Stop Irrigation" class="Task"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:25</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">14</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68403&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Start Event&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68404" class="Is inside">
+<FROM instance="after 30 min" class="Start Event"></FROM>
+<TO instance="Irrigation Action" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68436" class="Subsequent">
+<FROM instance="" class="Exclusive Gateway"></FROM>
+<TO instance="Read Rainfall Stop" class="End Event"></TO>
+<ATTRIBUTE name="Transition condition" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Transition probability" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualized values" type="ENUMERATION">Denomination</ATTRIBUTE>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:27</ATTRIBUTE>
+<ATTRIBUTE name="VisibleAttrs" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Visualization" type="ENUMERATION">RELATION</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector number" type="INTEGER">15</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">above/below</ATTRIBUTE>
+<ATTRIBUTE name="Font colour" type="ENUMERATION">black</ATTRIBUTE>
+<ATTRIBUTE name="Kommentar" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Info zur Übergangsbedingung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Language" type="EXPRESSION">EXPR val:&quot;System&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Bezeichnung" type="STRING">Nachfolger</ATTRIBUTE>
+<ATTRIBUTE name="Beschreibung" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Denomination" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="__Variants__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Auditing" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Monitoring" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Default" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Immediate" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Category" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68436&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Color" type="STRING">black</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+LANG &quot;en&quot;
+#-----------------------
+CHAPTER &quot;Description&quot;
+ATTR &quot;Denomination&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+
+
+CHAPTER &quot;Details (BPMN)&quot;
+
+ATTR &quot;Auditing&quot; 
+ATTR &quot;Monitoring&quot; 
+
+ATTR &quot;Default&quot; 
+ATTR &quot;Immediate&quot; 
+ATTR &quot;Category&quot;
+ATTR &quot;Id&quot; 
+
+
+CHAPTER &quot;Details (Simulation)&quot;
+
+ATTR &quot;Transition condition&quot; dialog:transcond
+
+ATTR &quot;Transition probability&quot;
+
+</ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;End Event&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Exclusive Gateway&quot;</ATTRIBUTE>
+<ATTRIBUTE name="ModelTypeExp" type="EXPRESSION">EXPR val:&quot;Business process diagram (BPMN 2.0)&quot;</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68437" class="Is inside">
+<FROM instance="" class="Exclusive Gateway"></FROM>
+<TO instance="Rainfall Sensor Device" class="Pool"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.68445" class="Message Flow">
+<FROM instance="Trigger Irrigation" class="Task"></FROM>
+<TO instance="Start irrigation" class="Task"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 2 x1:23cm y1:11.5cm x2:12.5cm y2:11.5cm index:28 MIDDLE x:23cm y:9.62cm</ATTRIBUTE>
+<ATTRIBUTE name="Message Name" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ParticipantType (from)" type="ENUMERATION">Role</ATTRIBUTE>
+<ATTRIBUTE name="Role (from)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Entity (from)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ParticipantType (to)" type="ENUMERATION">Role</ATTRIBUTE>
+<ATTRIBUTE name="Role (to)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Entity (to)" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Categories" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Documentation" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Name" type="STRING">Irrigation Signal</ATTRIBUTE>
+<ATTRIBUTE name="Message Properties" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="ToType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="FromType" type="EXPRESSION">EXPR val:&quot;Task&quot;</ATTRIBUTE>
+<ATTRIBUTE name="Number" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Show Name" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Show Number" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Representation" type="ENUMERATION">left/right</ATTRIBUTE>
+<ATTRIBUTE name="Rotate the visualised values by 90 degrees" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Show name" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Doku" type="STRING">NOTEBOOK
+
+#-----------------------
+CHAPTER &quot;Description&quot;
+#-----------------------
+ATTR &quot;Name&quot;
+ATTR &quot;Description&quot; 
+ATTR &quot;Comment&quot; 
+ATTR &quot;Id&quot; </ATTRIBUTE>
+<ATTRIBUTE name="Id" type="EXPRESSION">EXPR val:&quot;68445&quot;</ATTRIBUTE>
+</CONNECTOR>
+</MODEL>
+</MODELS>
+</ADOXML>
